@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@200;300;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.root{
+    --bg-color: #D9D9D9; 
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+/* --------- HEADER --------- */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F7F7F7;
+    font-weight: 600;
+    padding: 20px 12%;
+    transition: all .50s ease;
+    box-shadow: #d0d0d2 0px 0px 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+#header .logo{
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: #F15AAF;
+    font-size: 1.0rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;   
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: #CEB1DB;
+    border-bottom: 2px solid #CEB1DB;
+}
+.navbar a.active{
+    color: #68B5D9;
+    font-weight: 600;
+    border-color: #68B5D9;
+}
+
+.git-logo i{
+    font-size: 40px;
+    margin: 7px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #F15AAF;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+/* icons */
+.nav-user{
+    display: flex;
+    align-items: center;
+    background: #EAF7FC;
+    border-radius: 4px;
+    padding: 6.5px 0px;
+    cursor: pointer;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+    background: #EAF7FC;
+    border-radius: 4px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.nav-icon i{
+    font-size: 25px;
+    margin: 7px;
+}
+.nav-user i{
+    font-size: 25px;
+    margin: 7px;
+}
+
+
+.main a:hover{
+    color: #CEB1DB;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+#menu-icon{
+    font-size: 35px;
+    color: #F15AAF;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+
+/* --------- HOME PAGE --------- */
+#hero{
+    height: 88vh;
+    width: 100%;
+    background: #F2F4F7;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+}
+#hero h1{
+    font-weight: heavy;
+    font-size: 50px;
+    color: black;
+    transition: all .50s ease;
+}
+#hero h3{
+    font-style: italic;
+    font-size: 30px;
+    color: #AD1B6E;
+    transition: all .50s ease;
+}
+#hero img{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    width: 60%;
+}
+
+/* --------- EMPRENDIMIENTOS --------- */
+#quienes-somos{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.desc{                      /*Parrafo descriptivo con subtitulo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 150px 30px 150px;
+    margin: 20px;
+    color: #68B5D9;
+}
+.desc p{
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #000000;
+    text-align: center;
+    margin: 20px;
+}
+/* ---------- Objetivos -----------*/
+#e_axiologicos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 150px 30px 150px;
+    background: #AD1B6E;
+}
+#e_axiologicos h1{
+    padding-bottom: 20px;
+    color: #d7ddf2;
+}
+#e_axiologicos li{
+    font-weight: 500;
+    color: #d7ddf2;
+    text-align: flex-start;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+/* ------------ conteiner MISIÓN, VISIÓN Y CULTURALES -----------*/
+#objetivos{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-mvc{
+    background: #E6DFE5;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+}
+.box-mvc{
+    width: 100%; 
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-mvc{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card-mvc:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+.card-mvc .contenido{
+    color: #AD1B6E;
+    padding: 15px;
+    text-align: center;
+
+}
+
+/* --------- ESTUDIOS ETNOGRAFICOS --------- */
+#etnograficos{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #AD1B6E;
+    transition: all .50s ease;
+}
+#etnograficos .desc{                      /*Parrafo descriptivo con subtitulo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 150px 30px 150px;
+    margin: 20px;
+    color: #E6DFE5;
+}
+#etnograficos .desc p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #cbd8f3;
+    text-align: center;
+    margin: 20px;
+}
+#etnograficos .listado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 150px 30px 150px;
+    background: #E6DFE5;
+    transition: all .50s ease;
+    ;
+}
+#etnograficos .side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+}
+.side li{
+    font-weight: 500;
+    color: #AD1B6E;
+    text-align: flex-start;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+/* --------- Our TEAM --------- */
+/* Estilos para cada miembro del equipo */
+#our-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .50s ease;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    color: #68B5D9;
+    background: #EAF7FC;
+}
+.top p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.team-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: all .50s ease;
+}
+.team-member{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member h3 {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #333;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Estilos para la sección de conclusiones */
+  .conclusiones{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: all .50s ease;
+    transition: all .50s ease;
+    background: #AD1B6E;
+  }
+  .conclusion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .conclusion h2 {
+    color: #333;
+  }
+  
+  .conclusion p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+/*____________________________________*/
+/* ------------- Media ---------------*/
+@media (max-width: 1100px){
+    #header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0px; 
+        padding: 0px 25px;
+        transition: all .50s ease;
+        color: #080681;
+        font-weight: 600;
+    }
+     .navbar a:hover{
+        color: #016fd4;
+        border-bottom: 2px solid #016fd4;
+        transform: translate(5px);
+    } 
+    .navbar a.active{
+        color: #016fd4;
+        font-weight: 600;
+        border-color: #016fd4;
+    }
+    .navbar.open{
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        width: 250px;
+        height: 29vh;
+        background-image: linear-gradient(to right bottom, #e8e8ef, #e0e2f0, #d7ddf2, #cbd8f3, #bed4f4, #adcaf2, #9bc1f0, #87b7ee, #6da5e8, #5293e2, #3581db, #016fd4);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 8px;
+    }
+    #e_axiologicos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 150px 30px 150px;
+        background: #AD1B6E;
+    }
+    #e_axiologicos h1{
+        padding: 25px;
+        text-align: center;
+        color: #d7ddf2;
+    }
+    #e_axiologicos ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: auto;
+    }
+    #e_axiologicos li{
+        font-weight: 500;
+        color: #d7ddf2;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 900px){
+    #hero{
+        padding: 0px 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+    }
+    #hero h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: heavy;
+        font-size: 40px;
+        color: black;
+        transition: all .50s ease;
+    }
+    #hero h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        font-size: 25px;
+        color: #AD1B6E;
+        transition: all .50s ease;
+    }
+    #hero img{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    #hero h1{
+        font-size: 25px;
+        transition: all .50s ease;
+    }
+    #hero h3{
+        font-size: 20px;
+        transition: all .50s ease;
+    }
+    #hero img{
+        display: flex;
+        align-items: center;
+        width: 130%;
+    }
+    #e_axiologicos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 150px 30px 150px;
+        background: #AD1B6E;
+    }
+    #e_axiologicos h1{
+        padding: 25px;
+        text-align: center;
+        color: #d7ddf2;
+    }
+    #e_axiologicos ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: auto;
+    }
+    #e_axiologicos li{
+        font-weight: 500;
+        color: #d7ddf2;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+}
